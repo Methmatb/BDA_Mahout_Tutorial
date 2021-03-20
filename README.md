@@ -23,7 +23,7 @@ This contains the steps and scripts of building a recommendation tutorial provid
 
 **Building a Service**
 
-1.Get Twisted, and Klein and Redis modules for Python.<br/>
+1.Get Twisted, and Klein and Redis modules for Python. <br/>
     sudo pip install twisted <br/>
     sudo pip install klein <br/>
     sudo pip install redis <br/>
@@ -37,9 +37,9 @@ This contains the steps and scripts of building a recommendation tutorial provid
    
  3. Build a web service that pulls the recommendations into Redis and responds to queries using script “hello.py”
     
- 4.Start the web service. <br/>
-   twistd -noy hello.py &
+ 4. Start the web service. <br/>
+    twistd -noy hello.py &
  
- 5.Test the web service with user id “37”: <br/>
-   curl localhost:8080/37
+ 5. Test the web service with user id “37”: <br/>
+    curl localhost:8080/37
  
