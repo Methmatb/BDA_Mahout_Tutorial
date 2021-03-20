@@ -1,23 +1,23 @@
 # BDA_Mahout_Tutorial
 This contains the steps and scripts of building a recommendation tutorial provided by AWS
 
-1.  Initiallize the cluster using Quick options in AWS as hown in the video part1
+1.  Initiallize the cluster using Quick options in AWS as hown in the video part1<br/>
   Then SSH to the cluster using putty
 
-2.  Get the MovieLens data
-    wget http://files.grouplens.org/datasets/movielens/ml-1m.zip
+2.  Get the MovieLens data<br/>
+    wget http://files.grouplens.org/datasets/movielens/ml-1m.zip<br/>
     unzip ml-1m.zip
 
-3.  Convert ratings.dat, trade “::” for “,”, and take only the first three columns:
+3.  Convert ratings.dat, trade “::” for “,”, and take only the first three columns:<br/>
     cat ml-1m/ratings.dat | sed 's/::/,/g' | cut -f1-3 -d, > ratings.csv
 
-4.  Put ratings file into HDFS:
+4.  Put ratings file into HDFS:<br/>
     hadoop fs -put ratings.csv /ratings.csv
 
-5.  Run the recommender job: 
+5.  Run the recommender job: <br/>
     mahout recommenditembased --input /ratings.csv --output recommendations --numRecommendations 10 --outputPathForSimilarityMatrix similarity-matrix --similarityClassname       SIMILARITY_COSINE
 
-6.  Look for the results in the part-files containing the recommendations:
+6.  Look for the results in the part-files containing the recommendations:<br/>
     hadoop fs -ls recommendations
     hadoop fs -cat recommendations/part-r-00000 | head
 
