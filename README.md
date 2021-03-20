@@ -23,7 +23,7 @@ This contains the steps and scripts of building a recommendation tutorial provid
 
 **Building a Service**
 
-1.Get Twisted, and Klein and Redis modules for Python. <br/>
+1.  Get Twisted, and Klein and Redis modules for Python. <br/>
     sudo pip install twisted <br/>
     sudo pip install klein <br/>
     sudo pip install redis <br/>
