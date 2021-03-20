@@ -41,5 +41,8 @@ This contains the steps and scripts of building a recommendation system using ma
     twistd -noy hello.py &
  
  5. Test the web service with user id “37”: <br/>
-    curl localhost:8080/37
+    curl localhost:8080/37 <br/>
+    
+    Link to the video:
+    https://drive.google.com/drive/folders/1p3ojiQyuwuspTQyyQgLqgeF-sGN1jd0I?usp=sharing
  
