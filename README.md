@@ -24,9 +24,9 @@ This contains the steps and scripts of building a recommendation tutorial provid
 **Building a Service**
 
 1.Get Twisted, and Klein and Redis modules for Python.<br/>
-  sudo pip install twisted <br/>
-  sudo pip install klein <br/>
-  sudo pip install redis <br/>
+    sudo pip install twisted <br/>
+    sudo pip install klein <br/>
+    sudo pip install redis <br/>
 
 2. Install Redis and start up the server <br/>
    wget http://download.redis.io/releases/redis-2.8.7.tar.gz <br/>
