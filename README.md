@@ -1,8 +1,8 @@
 # BDA_Mahout_Tutorial
-This contains the steps and scripts of building a recommendation tutorial provided by AWS
+This contains the steps and scripts of building a recommendation system using mahout.This is a tutorial provided by AWS
 
 1.  Initiallize the cluster using Quick options in AWS as hown in the video part1<br/>
-  Then SSH to the cluster using putty
+    Then SSH to the cluster using putty
 
 2.  Get the MovieLens data<br/>
     wget http://files.grouplens.org/datasets/movielens/ml-1m.zip<br/>
